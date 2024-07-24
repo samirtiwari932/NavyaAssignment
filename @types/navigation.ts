@@ -3,13 +3,8 @@
   ChartScreen: { symbol: string }; // ChartScreen expects a 'symbol' parameter
 };
 
-
-
-
-
 export type DatasetType = 'open' | 'high' | 'low' | 'close';
 
-// Define the type for a single entry in the Weekly Adjusted Time Series
 interface WeeklyAdjustedEntry {
   "1. open": string;
   "2. high": string;
@@ -20,12 +15,11 @@ interface WeeklyAdjustedEntry {
   "7. dividend amount": string;
 }
 
-// Define the type for the Weekly Adjusted Time Series object
 interface WeeklyAdjustedTimeSeries {
   [date: string]: WeeklyAdjustedEntry;
 }
 
-// Define the type for the Meta Data
+
 interface MetaData {
   "1. Information": string;
   "2. Symbol": string;
@@ -33,7 +27,6 @@ interface MetaData {
   "4. Time Zone": string;
 }
 
-// Define the type for the mockStockData object
 interface StockData {
   "Meta Data": MetaData;
   "Weekly Adjusted Time Series": WeeklyAdjustedTimeSeries;
