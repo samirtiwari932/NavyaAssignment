@@ -1,6 +1,6 @@
  export type RootStackParamList = {
-  HomeScreen: undefined; // No parameters for HomeScreen
-  ChartScreen: { symbol: string }; // ChartScreen expects a 'symbol' parameter
+  HomeScreen: undefined; 
+  ChartScreen: { symbol: string }; 
 };
 
 export type DatasetType = 'open' | 'high' | 'low' | 'close';
